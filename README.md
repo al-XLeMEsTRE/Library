@@ -8,4 +8,5 @@ The Triple Peaks Library webpage is the first project in the Software Engineer p
 - Flexbox
 - Positioning
 - Vertical stacking with z-index
- #In the process of being Updated with (Reponsive Design,CSS Animation and Functionality with JS)
+
+- In the process of being Updated with (Reponsive Design,CSS Animation and Functionality with JS)

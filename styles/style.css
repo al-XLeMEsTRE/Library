@@ -11,7 +11,8 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-height: 720px;
+  min-height: 720px;
+  max-height: 800px;
   padding: 30px 80px 40px;
   position: relative;
   box-sizing: border-box;
@@ -25,7 +26,6 @@
 .nav__logo {
   width: 57px;
   height: 80px;
-  margin-bottom: 128px;
 }
 
 .nav__links {
@@ -33,6 +33,9 @@
   column-gap: 20px;
   list-style-type: none;
   padding-top: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .nav__link {
@@ -51,21 +54,21 @@
   font-weight: 500;
   margin: 0;
   max-width: 601px;
+  margin-top: 128px;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
   max-width: 532px;
-  margin: 0;
+  margin-bottom: 0px;
 }
 
 .header__image {
-  z-index: 1;
   position: absolute;
   max-width: 636px;
   right: 20px;
-  top: 135px;
+  bottom: 135px;
 }
 
 .header__footer {
@@ -323,11 +326,12 @@
 }
 
 .membership__steps {
+  list-style-type: none;
+  padding: 0;
+  margin: 100px 0 0;
   display: flex;
   justify-content: center;
-  list-style-type: none;
-  margin: auto;
-  padding: 110px 0 110px 0;
+  gap: 40px;
 }
 
 .step {
@@ -412,15 +416,13 @@
   padding-top: 60px;
 }
 
-.footer .footer__column_content_hours {
+.footer__column_content_hours {
   display: flex;
   flex-direction: column;
   margin-left: auto;
 }
 
 .footer__column_content_social {
-  position: static;
-  right: auto;
   display: flex;
   flex-direction: column;
   margin-left: 100px;

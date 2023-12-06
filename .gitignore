@@ -8,6 +8,11 @@ node_modules/
 /dist
 /build
 
+# History file
+.history
+
+
+
 # Logs
 *.log
 

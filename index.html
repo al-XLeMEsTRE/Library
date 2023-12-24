@@ -18,6 +18,11 @@
             alt="Triple Peaks Library Logo"
             class="nav__logo"
           />
+           <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" aria-label="Open navigation menu">
+          <!-- Hamburger Icon (☰) can be text or an image -->
+          ☰
+        </button>
           <ul class="nav__links">
             <li><a class="nav__link" href="#events">Events</a></li>
             <li><a class="nav__link" href="#staff-picks">Staff picks</a></li>
@@ -33,7 +38,7 @@
         <p class="header__description">
           We're pleased to open our library doors to everyone! Come and expand
           your development knowledge, or just use this lovely spot to work or
-          study. This is a cool place for cool students!
+          study. <br />This is a cool place for cool students!
         </p>
         <img
           src="./images/inside_the_library.png"
@@ -47,7 +52,7 @@
           </p>
         </div>
       </header>
-
+      <!--
       <main class="content">
         <section class="events" id="events">
           <div class="events__content">
@@ -135,7 +140,7 @@
           </div>
         </section>
 
-        <!-- Project, Final part -->
+
 
         <section class="staff" id="staff-picks">
           <h2 class="staff__title">Staff picks</h2>
@@ -341,5 +346,21 @@
         <p class="footer__copyright">© 2023 Gregory Alexandre</p>
       </footer>
     </div>
+     -->
+     <script>
+      // Wait for the DOM to load
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the hamburger button and the navigation links
+        var hamburger = document.querySelector('.hamburger-menu');
+        var navLinks = document.querySelector('.nav__links');
+
+        // Listen for a click on the hamburger button
+        hamburger.addEventListener('click', function () {
+          // Toggle the 'active' class on the navigation links
+          navLinks.classList.toggle('active');
+        });
+      });
+    </script>
+
   </body>
 </html>

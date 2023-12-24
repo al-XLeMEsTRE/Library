@@ -8,104 +8,119 @@
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-20px);
+    transform: translateY(-75px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
 
-/* Base styles */
 .page {
-  width: 100%; /* Use relative units */
+  min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem; /* Use rem for font sizes */
-  line-height: 1.25;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 2em 5vw; /* Use viewport width (vw) for padding */
+  min-height: 720px;
+  max-height: 800px;
+  padding: 30px 80px 40px;
   position: relative;
   box-sizing: border-box;
 }
 
-/* Navigation styles */
 .nav {
+  max-width: 80rem;
   display: flex;
   justify-content: space-between;
 }
 
 .nav__logo {
-  width: 57px; /* Consider making this responsive with % or vw */
-  height: 65px; /* Consider making this responsive with % or vw */
+  width: 57px;
+  height: 80px;
 }
 
 .nav__links {
   display: flex;
-  column-gap: 1.25rem;
+  column-gap: 20px;
   list-style-type: none;
-  padding: 0.5rem 0;
-  margin: 0;
+  padding-top: 8px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .nav__link {
-  color: #000;
+  font-size: large;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav__link:hover {
-  color: #1f69c9;
+  color: #2f80ed;
 }
 
-/* Header content styles */
+.hamburger-menu {
+  display: none; /* Show the hamburger menu */
+}
+
 .header__title {
-  max-width: 50rem;
-  font-size: 3.5rem; /* Use rem for responsiveness */
-  line-height: 4.75rem;
+  font-size: 50px;
+  line-height: 76px;
   font-weight: 500;
-  margin: 8rem 0 0 0; /* Adjust top margin */
+  margin: 0;
+  max-width: 700px;
+  margin-top: 110px;
 }
-
 .header__subtitle {
-  font-size: 3rem;
-  color: #0582ff; /* Change the color */
+  z-index: -1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 20rem;
+  position: absolute;
+  top: 32.5%;
+  right: 10%;
+  font-size: 3.5rem;
+  color: #3082ff; /* Change the color */
   /* Define the bounce animation */
   animation: bounce 2s infinite;
   margin-bottom: 0;
+  text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
 }
+
 .header__description {
-  max-width: 50rem;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
-  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 30px;
+  max-width: 48rem;
+  margin-bottom: 0px;
 }
 
 .header__image {
   z-index: -1;
-  max-width: 30rem;
   position: absolute;
-  right: 1.25rem;
-  bottom: 10rem; /* Adjust bottom position */
+  max-width: 32rem;
+  right: 15px;
+  bottom: 6rem;
 }
 
-/* Footer styles */
 .header__footer {
   margin-top: auto;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .header__link:hover {
@@ -115,72 +130,233 @@
 .header__address {
   margin: 0;
   color: #838383;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1220px) {
+  .header__description {
+    font-size: 28px;
+    line-height: 30px;
+    max-width: 35rem;
+    margin-bottom: 0px;
+  }
+  .header__image {
+    z-index: -1;
+    position: absolute;
+    max-width: 30rem;
+    right: 10px;
+    bottom: 8rem;
+  }
 }
 
 /* Media queries for responsive adjustments */
 @media (max-width: 768px) {
   .header__title {
-    font-size: 2.2rem;
+    max-width: 60rem;
+    text-align: center;
+    font-size: 2.3rem;
     line-height: 3rem;
-    margin-top: 2.5rem;
+    margin-top: 7.5rem;
     text-align: center; /* Center the text */
   }
   .header__subtitle {
-    text-align: center; /* Center the text */
-    font-size: 3rem;
-    color: #0957bd; /* Change the color */
+    z-index: -1;
+    position: absolute;
+    top: 59%;
+    left: 43%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+    font-size: 2.3rem;
+    color: #3082ff; /* Change the color */
     /* Define the bounce animation */
     animation: bounce 2s infinite;
     margin-bottom: 0;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
   }
   .header__description {
+    max-width: 45rem;
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin: 8px auto;
   }
 
   .header__image {
-    z-index: 0;
-    max-width: 40%; /* Reduce image size for smaller screens */
-    bottom: 8rem;
-    right: 15rem; /* Adjust position */
-    transition: transform 0.3s ease; /* Smooth transition for transform changes */
+    max-width: 20rem; /* Control the size of the image */
+    position: absolute; /* Position it absolutely within its parent container */
+    top: 75%; /* Set to 50% from the top of the parent container */
+    left: 50%; /* Set to 50% from the left of the parent container */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
   }
 
-  .header__image:hover {
-    border-radius: 50%;
-    background-color: transparent;
-    box-shadow: 5px 5px 1000px 5px rgba(188, 131, 9, 0.414);
-    transform: scale(1.3); /* Slightly scale up the image on hover */
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu */
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 55px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__logo {
+    width: 50px;
+    height: auto;
+    /* Adjust size for small screens */
+  }
+  .nav__link {
+    font-size: large;
   }
 
   .nav__links {
-    flex-direction: column; /* Stack links vertically on small screens */
-    text-align: start;
+    /* Initial state: hidden */
+    display: none;
+    /* Additional styles */
+  }
+
+  .nav__links.active {
+    z-index: -1;
+    /* When active, show the menu */
+    display: block;
+    /* Styles to properly format your navigation menu for mobile */
+    position: absolute;
+    background-color: #fff; /* Example background */
+    top: 27%; /* Position below the nav bar */
+    right: 35%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+    width: 15%;
+    margin-top: 0%;
+    text-align: center;
+    /* You might want to add more styles here */
   }
 }
 
-.nav__logo {
-  width: 10%; /* Adjust logo size */
-  height: auto; /* Maintain aspect ratio */
-}
-
+/* 480 Media Query */
 @media (max-width: 480px) {
-  .header {
-    padding: 1em; /* Reduce padding for very small screens */
-  }
-
   .header__title {
     font-size: 2rem;
-    line-height: 2.5rem;
-    margin-top: 2rem; /* Further reduce top margin */
+    line-height: 2rem;
+    margin-top: 7.25rem; /* Further reduce top margin */
+  }
+  .header__subtitle {
+    z-index: -1;
+    max-width: 40rem;
+    position: absolute;
+    top: 59%;
+    left: 43%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+    font-size: 2rem;
+    color: #3082ff; /* Change the color */
+    /* Define the bounce animation */
+    animation: bounce 2s infinite;
+    margin-bottom: 0;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
+  }
+
+  .header__description {
+    max-width: 35rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin: 8px auto;
+  }
+
+  .header__image {
+    max-width: 18rem; /* Control the size of the image */
+    position: absolute; /* Position it absolutely within its parent container */
+    top: 72%; /* Set to 50% from the top of the parent container */
+    left: 50%; /* Set to 50% from the left of the parent container */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+  }
+
+  .header__footer {
+    line-height: 2rem;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__link {
+    color: #2f80ed;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .header__address {
+    margin: 0;
+    color: #838383;
+    font-size: 0.8rem;
+  }
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu */
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 55px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav__logo {
+    width: 50px;
+    height: auto;
+    /* Adjust size for small screens */
+  }
+  .nav__link {
+    font-size: large;
   }
 
   .nav__links {
-    column-gap: 0.5rem; /* Reduce gap between links */
+    /* Initial state: hidden */
+    display: none;
+    /* Additional styles */
   }
+
+  .nav__links.active {
+    z-index: -1;
+    /* When active, show the menu */
+    display: block;
+    /* Styles to properly format your navigation menu for mobile */
+    position: absolute;
+    background-color: #fff; /* Example background */
+    top: 26%; /* Position below the nav bar */
+    right: 35%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+    width: 15%;
+    margin-top: 0%;
+    text-align: center;
+  }
+  /* You might want to a  dd more styles here */
 }
 
+/* Events styles */
 .events {
   padding: 100px 0 120px 80px;
   display: flex;

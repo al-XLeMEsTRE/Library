@@ -154,9 +154,10 @@
   .header__title {
     max-width: 60rem;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     line-height: 3rem;
-    margin-top: 7.5rem;
+    margin: 5.5rem auto 0.8rem;
+
     text-align: center; /* Center the text */
   }
   .header__subtitle {
@@ -176,9 +177,9 @@
     text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
   }
   .header__description {
-    max-width: 45rem;
+    max-width: 40rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.6rem;
     margin: 8px auto;
   }
@@ -201,12 +202,11 @@
     background-color: white;
     margin: 0;
     padding: 0;
-    font-size: 55px;
+    font-size: 70px;
   }
 
   .nav {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row-reverse;
   }
   .nav__logo {
     width: 50px;
@@ -230,15 +230,15 @@
     /* Styles to properly format your navigation menu for mobile */
     position: absolute;
     background-color: #fff; /* Example background */
-    top: 27%; /* Position below the nav bar */
-    right: 35%;
+    top: 20%; /* Position below the nav bar */
+    left: 18%;
     transform: translate(
       -50%,
       -50%
     ); /* Offset the image by half its width and height to center it */
-    width: 15%;
+    width: 20%;
     margin-top: 0%;
-    text-align: center;
+    text-align: start;
     /* You might want to add more styles here */
   }
 }
@@ -307,53 +307,6 @@
     color: #838383;
     font-size: 0.8rem;
   }
-  .hamburger-menu {
-    display: block; /* Show the hamburger menu */
-    cursor: pointer;
-    border: none;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    font-size: 55px;
-  }
-
-  .nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav__logo {
-    width: 50px;
-    height: auto;
-    /* Adjust size for small screens */
-  }
-  .nav__link {
-    font-size: large;
-  }
-
-  .nav__links {
-    /* Initial state: hidden */
-    display: none;
-    /* Additional styles */
-  }
-
-  .nav__links.active {
-    z-index: -1;
-    /* When active, show the menu */
-    display: block;
-    /* Styles to properly format your navigation menu for mobile */
-    position: absolute;
-    background-color: #fff; /* Example background */
-    top: 26%; /* Position below the nav bar */
-    right: 35%;
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Offset the image by half its width and height to center it */
-    width: 15%;
-    margin-top: 0%;
-    text-align: center;
-  }
-  /* You might want to a  dd more styles here */
 }
 
 /* Events styles */

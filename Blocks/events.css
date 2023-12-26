@@ -1,0 +1,210 @@
+/* Events styles */
+.event-slideshow {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+}
+.slides {
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  display: none; /* Hide all slides initially */
+}
+.slide img {
+  width: 100%;
+  display: block;
+}
+.prev,
+.next {
+  border: none;
+  background-color: transparent;
+  color: #3082ff;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.prev {
+  left: 22rem;
+}
+.next {
+  right: 20rem;
+}
+/* Display the first slide */
+.slides .slide:first-child {
+  display: block;
+}
+
+.event__title {
+  max-width: 18rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 1rem 0 0;
+}
+.event__description {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  max-width: 60rem;
+}
+
+.events__image {
+  border-radius: 3rem;
+  max-width: 32rem;
+  z-index: 0;
+  position: absolute;
+  right: 30%;
+  bottom: 10%;
+  translate: translate(-50%, -50%);
+}
+
+/*
+.events {
+  padding: 100px 0 120px 80px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.events__content {
+  flex-basis: 580px;
+}
+
+.events__heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 32px 0 0;
+}
+
+.events__info-section {
+  margin-top: 32px;
+}
+
+.event-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.event-info__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.event-info__icon_type_calendar {
+  background-image: url(../images/icon_calendar.svg);
+}
+
+.event-info__icon_type_pin {
+  background-image: url(../images/icon_pin.svg);
+}
+
+.event-info__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__description {
+  margin: 40px 0 60px;
+}
+
+.events__more {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.events__more:hover {
+  color: #1f69c9;
+}
+
+.events__cover {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 780px;
+  max-width: 780px;
+  position: relative;
+}
+
+.events__image {
+  max-width: 100%;
+  z-index: 0;
+}
+
+.person {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.person_name_feynman {
+  top: -30px;
+  left: 319px;
+}
+.person_name_burbidge {
+  right: 125px;
+  top: 96px;
+}
+
+.person_name_cannon {
+  bottom: 18px;
+  right: 216px;
+}
+
+.person_name_mitchell {
+  bottom: 82px;
+  left: 142px;
+}
+
+.person_name_tarter {
+  left: 159px;
+  top: 79px;
+}
+
+.person__image {
+  max-width: 100%;
+}
+
+.person__image_size_l {
+  width: 140px;
+}
+
+.person__image_size_m {
+  width: 100px;
+}
+
+.person__image_size_s {
+  width: 80px;
+}
+
+.person__caption {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+*/

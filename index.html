@@ -52,7 +52,46 @@
           </p>
         </div>
       </header>
+
       <main class="content">
+        <div class="event-slideshow">
+          <h1>Join Us For this Month</h1>
+          <div class="slides">
+            <div class="slide">
+              <div class="event-info">
+                <p class="event__description">
+                  Witness an extraordinary spectacle where the traditional
+                  vibrancy of artistic expression and the pulsating rhythms of
+                  modern technology dance in unison.
+                </p>
+                <h2 class="event__title">
+                  "Convergence of Creativity: Art Meets Technology"
+                </h2>
+                <p>
+                  <a
+                    href="https://www.eventbrite.com/e/convergence-of-creativity-art-meets-technology-tickets-20707179387?aff=ebdssbdestsearch"
+                    >Register</a
+                  >
+                </p>
+
+                <p class="event__date">Friday, November 13th</p>
+                <p class="event__location">
+                  At Mon Cafe, 369 Ougan Avenue, <br />
+                  Montreal Nord
+                </p>
+              </div>
+              <img
+                class="events__image"
+                src="/images/DALL·E 2023-12-20 18.47.52 - An artist and web developer stands at the convergence of two worlds; on one side is a colorful cityscape, representing the vibrant energy of tradition.png"
+                alt="Event 1"
+              />
+            </div>
+            <!-- Repeat for each event -->
+          </div>
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <!--
         <section class="events" id="events">
           <div class="events__content">
             <h2 class="events__heading">Upcoming events:</h2>
@@ -138,6 +177,7 @@
             </div>
           </div>
         </section>
+         -->
 
         <section class="staff" id="staff-picks">
           <h2 class="staff__title">Staff picks</h2>
@@ -356,6 +396,34 @@
           navLinks.classList.toggle("active");
         });
       });
+
+      // Slideshow
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function showSlide(index) {
+        if (index >= slides.length) {
+          currentSlide = 0;
+        } else if (index < 0) {
+          currentSlide = slides.length - 1;
+        } else {
+          currentSlide = index;
+        }
+
+        // Hide all slides and show the correct one
+        slides.forEach((slide) => (slide.style.display = "none"));
+        slides[currentSlide].style.display = "block";
+      }
+
+      function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+      }
+
+      // Initially display the first slide
+      showSlide(currentSlide);
+
+      // Optional: add auto-slide functionality
+      setInterval(() => changeSlide(1), 3000); // Change slide every 3 seconds
     </script>
   </body>
 </html>

@@ -1,0 +1,375 @@
+@media (max-width: 1150px) {
+  .header__description {
+    font-size: 28px;
+    line-height: 30px;
+    max-width: 500px;
+    margin-bottom: 0px;
+  }
+  .header__image {
+    max-width: 500px;
+  }
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 1000px) {
+  .header__title {
+    max-width: 550px;
+    font-size: 45px;
+    margin: 100px auto 10px;
+    text-align: center; /* Center the text */
+  }
+
+  .header__subtitle {
+    z-index: -1;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+    font-size: 2.3rem;
+    color: #3082ff; /* Change the color */
+    /* Define the bounce animation */
+    animation: bounce 2s infinite;
+    margin-bottom: 0;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
+  }
+  .header__description {
+    max-width: 40rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin: 8px auto;
+  }
+
+  .header__image {
+    max-width: 380px; /* Control the size of the image */
+    position: absolute; /* Position it absolutely within its parent container */
+    top: 73%; /* Set to 50% from the top of the parent container */
+    left: 50%; /* Set to 50% from the left of the parent container */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+  }
+
+  .header__footer {
+    margin-top: 370px;
+  }
+  .header__address {
+    font-size: 1.1rem;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu */
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: #3082ff;
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+  }
+
+  .nav {
+    flex-direction: row;
+  }
+  .nav__logo {
+    width: 50px;
+    height: auto;
+    /* Adjust size for small screens */
+  }
+  .nav__link {
+    font-size: 15px;
+  }
+
+  .nav__links {
+    /* Initial state: hidden */
+    display: none;
+    /* Additional styles */
+  }
+
+  .nav__links.active {
+    display: block;
+    /* Styles to properly format your navigation menu for mobile */
+    position: absolute;
+    background-color: #fff; /* Example background */
+    top: 135px;
+    right: -27px;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+
+    margin-top: 0%;
+    text-align: end;
+    /* You might want to add more styles here */
+  }
+  /* Events Sections */
+  .event-slideshow__arrow {
+    top: 50%;
+  }
+
+  .event-slideshow__arrow--left {
+    left: 40px;
+  }
+
+  .event-slideshow__arrow--right {
+    right: 40px;
+  }
+
+  .events-slideshow__media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+  }
+
+  .event-slideshow__title {
+    max-width: 385px;
+    font-size: 40px;
+    margin: 0 auto;
+  }
+  .event-slideshow__subtitle {
+    max-width: 600px;
+    font-size: 30px;
+  }
+  .event-slideshow__subtitle2 {
+    max-width: 600px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 40px;
+
+    margin-top: 100px;
+  }
+  .header__subtitle {
+    z-index: -1;
+    max-width: 40rem;
+    position: absolute;
+    top: 53%;
+    left: 40%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+    font-size: 2.3rem;
+    color: #3082ff; /* Change the color */
+    /* Define the bounce animation */
+    animation: bounce 2s infinite;
+    margin-bottom: 0;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
+  }
+  .header__description {
+    max-width: 40rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin: 8px auto;
+  }
+  .header__image {
+    max-width: 380px; /* Control the size of the image */
+    position: absolute; /* Position it absolutely within its parent container */
+    top: 70%; /* Set to 50% from the top of the parent container */
+    left: 50%; /* Set to 50% from the left of the parent container */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+  }
+  .header__footer {
+    margin-top: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__link {
+    color: #2f80ed;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .header__address {
+    margin: 0;
+    color: #838383;
+    font-size: 0.8rem;
+  }
+
+  /* Events Sections */
+  .events__heading {
+    font-size: 30px;
+  }
+  .event-slideshow__info {
+    font-size: 20px;
+  }
+
+  .event-slideshow__link {
+    font-size: 15px;
+  }
+
+  .event-slideshow__title {
+    font-size: 30px;
+  }
+
+  .event-slideshow__subtitle {
+    font-size: 28px;
+    max-width: 450px;
+  }
+  .event-slideshow__subtitle2 {
+    font-size: 40px;
+  }
+  .event-slideshow__image {
+    max-width: 300px;
+  }
+
+  /* Membership Sections */
+  .step {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 665px) {
+  .nav__logo {
+    width: 40px;
+    /* Adjust size for small screens */
+  }
+  .header__title {
+    font-size: 35px;
+    max-width: 600px;
+    margin-top: 100px;
+  }
+  .header__subtitle {
+    z-index: -1;
+    max-width: 40rem;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+    font-size: 30px;
+    color: #3082ff; /* Change the color */
+    /* Define the bounce animation */
+    animation: bounce 2s infinite;
+    margin-bottom: 0;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
+  }
+  .header__description {
+    max-width: 50rem;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6rem;
+    margin: 8px auto;
+  }
+  .header__image {
+    max-width: 340px; /* Control the size of the image */
+    position: absolute; /* Position it absolutely within its parent container */
+    top: 70%; /* Set to 50% from the top of the parent container */
+    left: 50%; /* Set to 50% from the left of the parent container */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+  }
+  .header__footer {
+    margin-top: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__link {
+    color: #2f80ed;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .header__address {
+    margin: 0;
+    color: #838383;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger-menu {
+    font-size: 50px;
+  }
+
+  .nav__links.active {
+    top: 130px;
+    right: -15px;
+  }
+  .nav__link {
+    font-size: 12px;
+  }
+  .header__title {
+    font-size: 30px;
+  }
+  .header__subtitle {
+    max-width: 40rem;
+    position: absolute;
+    top: 57%;
+    left: 40%;
+
+    font-size: 25px;
+    color: #3082ff; /* Change the color */
+    /* Define the bounce animation */
+    animation: bounce 2s infinite;
+    margin-bottom: 0;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
+  }
+  .header__description {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin: 8px auto;
+  }
+  .header__image {
+    max-width: 20rem; /* Control the size of the image */
+    position: absolute; /* Position it absolutely within its parent container */
+    top: 70%; /* Set to 50% from the top of the parent container */
+    left: 50%; /* Set to 50% from the left of the parent container */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Offset the image by half its width and height to center it */
+  }
+  .header__footer {
+    line-height: 2rem;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__link {
+    color: #2f80ed;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .header__address {
+    margin: 0;
+    color: #838383;
+    font-size: 0.8rem;
+  }
+
+  /* Events Sections */
+  .event-slideshow__arrow {
+    top: 90%;
+  }
+
+  .event-slideshow__arrow--left {
+    left: 40px;
+  }
+
+  .event-slideshow__arrow--right {
+    right: 40px;
+  }
+}

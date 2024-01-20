@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./script/script.js"></script>
   </head>
 
   <body>
@@ -54,131 +55,114 @@
       </header>
 
       <main class="content">
-        <div class="event-slideshow">
-          <h1>Join Us For this Month</h1>
-          <div class="slides">
-            <div class="slide">
-              <div class="event-info">
-                <p class="event__description">
-                  Witness an extraordinary spectacle where the traditional
-                  vibrancy of artistic expression and the pulsating rhythms of
-                  modern technology dance in unison.
-                </p>
-                <h2 class="event__title">
-                  "Convergence of Creativity: Art Meets Technology"
-                </h2>
-                <p>
-                  <a
-                    href="https://www.eventbrite.com/e/convergence-of-creativity-art-meets-technology-tickets-20707179387?aff=ebdssbdestsearch"
-                    >Register</a
-                  >
-                </p>
-
-                <p class="event__date">Friday, November 13th</p>
-                <p class="event__location">
-                  At Mon Cafe, 369 Ougan Avenue, <br />
-                  Montreal Nord
-                </p>
-              </div>
-              <img
-                class="events__image"
-                src="/images/DALL·E 2023-12-20 18.47.52 - An artist and web developer stands at the convergence of two worlds; on one side is a colorful cityscape, representing the vibrant energy of tradition.png"
-                alt="Event 1"
-              />
-            </div>
-            <!-- Repeat for each event -->
-          </div>
-          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-          <button class="next" onclick="changeSlide(1)">&#10095;</button>
-        </div>
-        <!--
-        <section class="events" id="events">
-          <div class="events__content">
-            <h2 class="events__heading">Upcoming events:</h2>
-            <h3 class="events__title">
-              In honor of Joan Feynman: Women in astrophysics
-            </h3>
-            <div class="event-info events__info-section">
-              <div class="event-info__item">
-                <div
-                  class="event-info__icon event-info__icon_type_calendar"
-                ></div>
-                <p class="event-info__text">Mon, January 12</p>
-              </div>
-              <div class="event-info__item">
-                <div class="event-info__icon event-info__icon_type_pin"></div>
-                <p class="event-info__text">
-                  Triple Peaks Library Conference Hall &amp; Online
-                </p>
-              </div>
-            </div>
-            <p class="events__description">
-              At this event, which celebrates the library's namesake, our guest
-              lecturer will take us on a journey exploring some of the most
-              prominent female researchers in the world of space science. It's
-              easy to buy into the misconception that this field was mostly
-              dominated by men, but our lecture aims to change that notion and
-              prove that this hasn't been the case since at least the 18th
-              century.
+        <section class="events">
+          <h2 class="events__heading">Upcoming Events:</h2>
+          <!-- Art & Technology -->
+          <div
+            class="event-slideshow__slide event-slideshow__slide--active"
+            id="slide1"
+          >
+            <p class="event-slideshow__info">
+              Date: [ ] <br />
+              Time: [ ]
             </p>
-            <a href="#" class="events__more">More events →</a>
-          </div>
+            <a href="[Register Link]" class="event-slideshow__link">Register</a>
+            <!-- Add your image here with an appropriate alt text -->
+            <div class="events-slideshow__media">
+              <h2 class="event-slideshow__title">
+                Art & Technology: <br />
+                <span class="event-slideshow__subtitle2">
+                  Exploring the Intersection</span
+                >
+              </h2>
 
-          <div class="events__cover">
-            <img
-              src="./images/cafe.png"
-              alt="Cafe Image"
-              class="events__image"
-            />
-
-            <div class="person person_name_feynman">
-              <p class="person__caption">Joan Feynman</p>
               <img
-                src="./images/person_feynman.png"
-                alt="Joan Feynman"
-                class="person__image person__image_size_l"
+                src="./images/Events/art&tech.png"
+                alt="Art and Technology"
+                class="event-slideshow__image"
               />
-            </div>
-
-            <div class="person person_name_burbidge">
-              <p class="person__caption">Margaret Burbidge</p>
-              <img
-                src="./images/person_burbidge.png"
-                alt="Burbidge"
-                class="person__image person__image_size_m"
-              />
-            </div>
-
-            <div class="person person_name_tarter">
-              <p class="person__caption">Jill Tarter</p>
-              <img
-                src="./images/person_tarter.png"
-                alt="Tarter"
-                class="person__image person__image_size_m"
-              />
-            </div>
-
-            <div class="person person_name_cannon">
-              <img
-                src="./images/person_cannon.png"
-                alt="Cannon"
-                class="person__image person__image_size_m"
-              />
-              <p class="person__caption">Annie Jump Cannon</p>
-            </div>
-
-            <div class="person person_name_mitchell">
-              <img
-                src="./images/person_mitchell.png"
-                alt="Mitchell"
-                class="person__image person__image_size_s"
-              />
-              <p class="person__caption">Maria Mitchell</p>
+              <p class="event-slideshow__subtitle">
+                Melds the vibrant world of creativity with the precision of the
+                digital era. Attendees are invited to explore this intersection
+                of expressive brushstrokes and innovative bytes. Register now to
+                be part of a dialogue that redefines art in the digital age.
+              </p>
             </div>
           </div>
+          <!-- Singularity & The New God -->
+          <div class="event-slideshow__slide" id="slide2">
+            <p class="event-slideshow__info">
+              Date: [ ] <br />
+              Time: [ ]
+            </p>
+            <a href="[Register Link]" class="event-slideshow__link">Register</a>
+            <div class="events-slideshow__media">
+              <h2 class="event-slideshow__title">
+                Singularity & The New God: <br />
+                <span class="event-slideshow__subtitle2">
+                  A Glimpse Beyond Tomorrow</span
+                >
+              </h2>
+              <img
+                src="./images/Events/Singlarity&the new GOd.png"
+                alt="Singularity and The New God"
+                class="event-slideshow__image"
+              />
+              <p class="event-slideshow__subtitle">
+                "Singularity & The New God" invites you to envision a future
+                shaped by the hands of advanced AI and robotics. Step into a
+                realm where technology transcends human limitations and sparks
+                conversations about the next evolution of consciousness. Secure
+                your spot today for an event that promises a thought-provoking
+                journey into tomorrow.
+              </p>
+            </div>
+          </div>
+          <!-- Poverty in our New World -->
+          <div class="event-slideshow__slide" id="slide3">
+            <p class="event-slideshow__info">
+              Date: [ ] <br />
+              Time: [ ]
+            </p>
+            <a href="[Register Link]" class="event-slideshow__link">Register</a>
+            <div class="events-slideshow__media">
+              <h2 class="event-slideshow__title">
+                Poverty in Our New World: <br />
+                <span class="event-slideshow__subtitle2">
+                  Bridging the Divide</span
+                >
+              </h2>
+              <img
+                src="./images/Events/Poverty in the New World.png"
+                alt="Poverty in Our New World"
+                class="event-slideshow__image"
+              />
+              <p class="event-slideshow__subtitle">
+                "Poverty in Our New World" explores the dichotomy of prosperity
+                and need within the tapestry of modern society. Join us to delve
+                into discussions and initiatives aimed at understanding and
+                addressing the global challenge of economic disparity. Be part
+                of the change—register now to contribute to a more equitable
+                world.
+              </p>
+            </div>
+          </div>
+          <!--Slideshow Navigation -->
+          <!--Slideshow Navigation -->
+          <button
+            class="event-slideshow__arrow event-slideshow__arrow--left"
+            onclick="plusSlides(-1)"
+          >
+            &#10094;
+          </button>
+          <button
+            class="event-slideshow__arrow event-slideshow__arrow--right"
+            onclick="plusSlides(1)"
+          >
+            &#10095;
+          </button>
         </section>
-         -->
-
+        <!-- Staff Section -->
         <section class="staff" id="staff-picks">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
@@ -253,7 +237,7 @@
             </li>
           </ul>
         </section>
-
+        <!--Memberships Section -->
         <section class="membership" id="become-a-member">
           <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
@@ -309,7 +293,7 @@
             </li>
           </ul>
         </section>
-
+        <!--About Section -->
         <section class="about" id="about">
           <h2 class="about__title">About the library</h2>
           <div class="about__content">
@@ -383,47 +367,5 @@
         <p class="footer__copyright">© 2023 Gregory Alexandre</p>
       </footer>
     </div>
-    <script>
-      // Wait for the DOM to load
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get the hamburger button and the navigation links
-        var hamburger = document.querySelector(".hamburger-menu");
-        var navLinks = document.querySelector(".nav__links");
-
-        // Listen for a click on the hamburger button
-        hamburger.addEventListener("click", function () {
-          // Toggle the 'active' class on the navigation links
-          navLinks.classList.toggle("active");
-        });
-      });
-
-      // Slideshow
-      let currentSlide = 0;
-      const slides = document.querySelectorAll(".slide");
-
-      function showSlide(index) {
-        if (index >= slides.length) {
-          currentSlide = 0;
-        } else if (index < 0) {
-          currentSlide = slides.length - 1;
-        } else {
-          currentSlide = index;
-        }
-
-        // Hide all slides and show the correct one
-        slides.forEach((slide) => (slide.style.display = "none"));
-        slides[currentSlide].style.display = "block";
-      }
-
-      function changeSlide(direction) {
-        showSlide(currentSlide + direction);
-      }
-
-      // Initially display the first slide
-      showSlide(currentSlide);
-
-      // Optional: add auto-slide functionality
-      setInterval(() => changeSlide(1), 3000); // Change slide every 3 seconds
-    </script>
   </body>
 </html>

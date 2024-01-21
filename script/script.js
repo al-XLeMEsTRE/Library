@@ -1,5 +1,11 @@
 // script.js
 document.addEventListener("DOMContentLoaded", (event) => {
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navLinks = document.querySelector(".nav__links");
+
+  hamburgerMenu.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
   let currentSlideIndex = 1;
   showSlides(currentSlideIndex);
 

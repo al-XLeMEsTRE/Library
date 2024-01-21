@@ -32,3 +32,11 @@
 .hamburger-menu {
   display: none; /* Show the hamburger menu */
 }
+.nav__link--active {
+  color: #e74c3c; /* Change color for active link */
+  text-decoration: underline; /* Add an underline to indicate active state */
+}
+.nav__link--active {
+  color: #e74c3c; /* Change color for active link */
+  text-decoration: underline; /* Add an underline to indicate active state */
+}

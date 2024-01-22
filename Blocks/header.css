@@ -15,7 +15,7 @@
 }
 
 .header {
-  box-shadow: inset 1px 0px 20px 6px #11111274;
+  box-shadow: inset 1px 0px 20px 6px #0d0d0d;
   display: flex;
   flex-direction: column;
   height: 100vh;

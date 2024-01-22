@@ -166,19 +166,25 @@
     font-size: 25px;
     margin-bottom: 0;
   }
-
   /* About Sections */
-  .about__circle {
-    position: absolute;
-    left: -312px;
-    top: -69px;
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
   }
   .about__title {
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 20px;
   }
-  .about__paragraph {
-    font-size: 18px;
+
+  .about__circle {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -150px;
+    left: 45%;
+    transform: translateX(-50%);
   }
 }
 
@@ -490,5 +496,14 @@
 
   .events-slideshow__media {
     margin: 20px auto 30px;
+  }
+
+  /* About Sections */
+  .about__title {
+    font-size: 20px;
+  }
+
+  .about__paragraph {
+    font-size: 16px;
   }
 }

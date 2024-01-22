@@ -1,4 +1,18 @@
+/* Animation keyframes for the bubble effect */
+@keyframes bubble {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) scale(0.5);
+  }
+  50% {
+    transform: translateY(50px) translateX(50px) scale(1.2);
+  }
+}
+
 .card {
+  position: relative;
+  overflow: hidden; /* Ensures the pseudo-elements are contained within the card */
+  /* Rest of your styles... */
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
@@ -36,3 +50,42 @@
   line-height: 20px;
   color: #838383;
 }
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  width: 200%; /* Large size to allow for a bubble effect */
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  border-radius: 50%;
+  opacity: 0.2; /* Semi-transparent bubbles */
+  animation: bubble 6s infinite ease-in-out;
+  pointer-events: none; /* Ignore mouse events */
+}
+
+.card::after {
+  top: -80%;
+  left: -80%;
+  animation-duration: 8s; /* Vary the duration for more randomness */
+}
+
+.card:hover::before,
+.card:hover::after {
+  background: #007bff; /* Light bubble color when hovering */
+}
+
+/* Add transition effect for hover state */
+.card:hover .card__content {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.05); /* Slightly scale up the content */
+}
+
+/* Additional styles for hover effect */
+.card__content:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight background on hover */
+  border-radius: 6px; /* Keep rounded corners */
+}
+
+/* Rest of your styles... */

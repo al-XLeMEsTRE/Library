@@ -1,6 +1,10 @@
 .staff {
   padding: 100px 0 140px;
-  background-image: url(../images/staff_picks_background.jpg);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.832),
+      rgba(6, 26, 248, 0.52)
+    ),
+    url(../images/staff_picks_background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }

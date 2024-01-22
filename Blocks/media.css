@@ -135,10 +135,50 @@
   .event-slideshow__subtitle {
     max-width: 600px;
     font-size: 30px;
+    margin-top: 50px;
   }
   .event-slideshow__subtitle2 {
     max-width: 600px;
-    font-size: 50px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 759px) {
+  .membership {
+    padding: 80px 40px;
+    background-color: #f2f2f2;
+  }
+  .membership__title {
+    font-size: 35px;
+  }
+
+  .membership__steps {
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .step__title {
+    font-size: 30px;
+  }
+  .step__description {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  /* About Sections */
+  .about__circle {
+    position: absolute;
+    left: -312px;
+    top: -69px;
+  }
+  .about__title {
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .about__paragraph {
+    font-size: 18px;
   }
 }
 
@@ -213,7 +253,7 @@
   }
 
   .event-slideshow__title {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .event-slideshow__subtitle {
@@ -221,16 +261,19 @@
     max-width: 450px;
   }
   .event-slideshow__subtitle2 {
-    font-size: 40px;
+    font-size: 32px;
   }
   .event-slideshow__image {
     max-width: 300px;
   }
-
-  /* Membership Sections */
-  .step {
-    max-width: 500px;
+  .events-slideshow__media {
+    margin: 20px auto 50px;
   }
+}
+
+/* Membership Sections */
+.step {
+  max-width: 500px;
 }
 
 @media (max-width: 665px) {
@@ -324,6 +367,11 @@
     margin-bottom: 0;
     text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.585); /* horizontal-offset vertical-offset blur-radius color */
   }
+
+  .event-slideshow__subtitle2 {
+    font-size: 35px;
+  }
+
   .header__description {
     text-align: center;
     font-size: 20px;
@@ -331,7 +379,7 @@
     margin: 8px auto;
   }
   .header__image {
-    max-width: 20rem; /* Control the size of the image */
+    max-width: 400px; /* Control the size of the image */
     position: absolute; /* Position it absolutely within its parent container */
     top: 70%; /* Set to 50% from the top of the parent container */
     left: 50%; /* Set to 50% from the left of the parent container */
@@ -362,7 +410,7 @@
 
   /* Events Sections */
   .event-slideshow__arrow {
-    top: 90%;
+    top: 91%;
   }
 
   .event-slideshow__arrow--left {
@@ -421,9 +469,6 @@
   }
 
   /* Events Sections */
-  .event-slideshow__arrow {
-    top: 90%;
-  }
 
   .event-slideshow__arrow--left {
     left: 40px;
@@ -438,5 +483,12 @@
   .event-slideshow__subtitle {
     font-size: 20px;
     max-width: 300px;
+  }
+  .event-slideshow__image {
+    max-width: 270px;
+  }
+
+  .events-slideshow__media {
+    margin: 20px auto 30px;
   }
 }

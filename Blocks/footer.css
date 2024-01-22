@@ -71,8 +71,24 @@
 }
 
 .footer__copyright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 108px;
+  gap: 20px;
   padding-bottom: 60px;
   margin-bottom: 0;
   color: white;
+}
+
+.footer__image {
+  width: 60px;
+  height: 80px;
+}
+.footer__text {
+  font-size: 22px;
+  color: #fff;
+}
+.footer__text-span {
+  color: #2f80ed;
 }

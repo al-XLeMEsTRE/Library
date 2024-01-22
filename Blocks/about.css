@@ -1,6 +1,20 @@
+/* Keyframes for the pulsate animation */
+@keyframes pulsate {
+  0% {
+    opacity: 0; /* Start of the animation, circle is invisible */
+  }
+  50% {
+    opacity: 0.6; /* Middle stage, opacity is 0.6 */
+  }
+  100% {
+    opacity: 0; /* End of the animation, circle is invisible */
+    transform: scale(1.5); /* Scale the circle, adjust value as needed */
+  }
+}
+
 .about {
   position: relative;
-  padding: 100px 80px;
+  padding: 60px;
   background-color: #1f1f1f;
   color: #fff;
   overflow: hidden;
@@ -11,11 +25,11 @@
 
 .about__title {
   margin: 0;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 30px;
-  font-weight: 500;
-  max-width: 154px;
-  margin-right: 120px;
+  font-weight: 700;
+  max-width: 184px;
+  margin-right: 80px;
   z-index: 2;
 }
 
@@ -29,13 +43,18 @@
 
 .about__circle {
   position: absolute;
-  left: -91px;
-  top: -121px;
+  left: -222px;
+  top: -249px;
   background-color: #2f80ed;
   width: 495px;
   height: 495px;
   border-radius: 50%;
   z-index: 1;
+}
+
+.about__circle_animation_blurred {
+  background-color: #555345;
+  animation: pulsate 1.3s ease-in-out infinite; /* Apply the animation */
 }
 .about__paragraph {
   margin: 0 0 32px;

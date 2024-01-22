@@ -1,16 +1,7 @@
-# macOS system files
-.DS_Store
 
-# History file
+.DS_Store
 .history
 .ideas.txt
-
-# Environment variables file
-.prettierignore
-.editorconfig
-
-
-# IDE / editors
-.idea/
 .vscode/
+
 

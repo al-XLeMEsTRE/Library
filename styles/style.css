@@ -1,5 +1,4 @@
 @import url(../vendor/normalize.css);
-@import url(../Blocks/media.css);
 @import url(../Blocks/header.css);
 @import url(../Blocks/nav.css);
 @import url(../blocks/events.css);
@@ -8,3 +7,4 @@
 @import url(../Blocks/);
 @import url(../Blocks/about.css);
 @import url(../Blocks/footer.css);
+@import url(../Blocks/media.css);

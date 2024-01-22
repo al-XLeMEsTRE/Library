@@ -161,9 +161,10 @@
   }
   .step__title {
     font-size: 30px;
+    margin-bottom: 0;
   }
   .step__description {
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 0;
   }
   /* About Sections */
@@ -280,6 +281,45 @@
 /* Membership Sections */
 .step {
   max-width: 500px;
+}
+
+@media (max-width: 600px) {
+  .footer__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer__columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer__column_content_hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    gap: 90px;
+  }
+
+  .footer__column_content_social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    gap: 90px;
+  }
+
+  .footer__logo {
+    color: #fff;
+    margin-left: 0px;
+    width: 57px;
+    height: 80px;
+  }
 }
 
 @media (max-width: 665px) {

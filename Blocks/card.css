@@ -73,7 +73,7 @@
 
 .card:hover::before,
 .card:hover::after {
-  background: #007bff; /* Light bubble color when hovering */
+  background-color: #075cdb; /* Light bubble color when hovering */
 }
 
 /* Add transition effect for hover state */

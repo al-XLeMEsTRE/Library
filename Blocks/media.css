@@ -239,7 +239,7 @@
     /* Adjust size for small screens */
   }
   .header__title {
-    font-size: 35px;
+    font-size: 32px;
     max-width: 600px;
     margin-top: 100px;
     margin-bottom: 0;
@@ -375,6 +375,10 @@
 }
 
 @media (max-width: 380px) {
+  .header__subtitle {
+    font-size: 20px;
+    top: 63%;
+  }
   .header__title {
     font-size: 25px;
   }
@@ -387,9 +391,9 @@
     max-width: 300px;
   }
   .header__image {
-    max-width: 280px; /* Control the size of the image */
+    max-width: 260px; /* Control the size of the image */
     position: absolute; /* Position it absolutely within its parent container */
-    top: 70%; /* Set to 50% from the top of the parent container */
+    top: 72%; /* Set to 50% from the top of the parent container */
     left: 50%; /* Set to 50% from the left of the parent container */
     transform: translate(
       -50%,

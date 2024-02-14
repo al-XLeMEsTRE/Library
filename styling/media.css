@@ -473,27 +473,29 @@
   .header {
     padding: 20px;
   }
-
+  .header__title {
+    font-size: 26px;
+  }
   .header__subtitle {
     font-size: 20px;
     top: 60%;
   }
-  .header__title {
-    font-size: 25px;
-  }
+
   .header__subtitle {
     font-size: 25px;
+    top: 50%;
+    left: 38%;
   }
   .header__description {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     max-width: 300px;
     line-height: 20px;
   }
   .header__image {
     max-width: 300px; /* Control the size of the image */
     position: absolute; /* Position it absolutely within its parent container */
-    top: 70%; /* Set to 50% from the top of the parent container */
+    top: 60%; /* Set to 50% from the top of the parent container */
     left: 50%; /* Set to 50% from the left of the parent container */
     transform: translate(
       -50%,

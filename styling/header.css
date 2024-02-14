@@ -19,28 +19,24 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  min-height: 720px;
-  max-height: 800px;
   padding: 40px;
   position: relative;
   box-sizing: border-box;
 }
 
 .header__title {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   margin: 0;
-  max-width: 700px;
   margin-top: 110px;
 }
 .header__subtitle {
   z-index: -1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  max-width: 20rem;
   position: absolute;
-  top: 30.5%;
-  right: 12%;
-  font-size: 3.5rem;
+  top: 30.75%;
+  right: 15%;
+  font-size: 60px;
   color: #3082ff; /* Change the color */
   /* Define the bounce animation */
   animation: bounce 2s infinite;
@@ -49,7 +45,7 @@
 }
 
 .header__description {
-  font-size: 28px;
+  font-size: 30px;
   line-height: 30px;
   max-width: 700px;
   margin-bottom: 0px;
@@ -58,9 +54,9 @@
 .header__image {
   z-index: -1;
   position: absolute;
-  max-width: 510px;
+  max-width: 580px;
   right: 35px;
-  bottom: 6rem;
+  bottom: 60px;
 }
 
 .header__footer {

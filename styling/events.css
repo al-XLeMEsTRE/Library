@@ -2,6 +2,7 @@
   position: relative;
   margin: auto;
   padding: 40px;
+  height: 100vh;
   text-align: center;
   background-color: #000000f0;
   box-shadow: -16px 20px 30px 10px #2e80ed;
@@ -46,33 +47,32 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   margin: 20px auto 90px;
 }
 
 .event-slideshow__title {
-  max-width: 300px;
-  font-size: 45px;
+  max-width: 450px;
+  font-size: 85px;
   font-weight: bold;
 }
 .event-slideshow__image {
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
   border-radius: 50px;
-  box-shadow: -15px 20px 30px 20px #dbd7af4f;
+  box-shadow: -11px 7px 40px 7px #dbd7af4f;
 }
 
 .event-slideshow__subtitle {
-  max-width: 300px;
-  font-size: 20px;
+  max-width: 600px;
+  font-size: 40px;
   color: #ffffff;
-  line-height: 28px;
+  line-height: 38px;
   text-align: justify;
   margin-bottom: 0;
 }
 
 .event-slideshow__subtitle2 {
-  font-size: 35px;
   color: #007bff;
   text-align: justify;
   font-weight: 600;
@@ -105,7 +105,7 @@
 }
 
 .event-slideshow__arrow:hover {
-  color: #0056b3; /* Darker blue shade on hover */
+  color: #ffffff; /* Darker blue shade on hover */
   transform: scale(1.05); /* Slightly scale the arrows up */
   animation: pulse 1s infinite; /* Apply the pulsing animation */
 }

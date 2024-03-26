@@ -1,6 +1,5 @@
 @import url(../vendor/normalize.css);
 @import url(../styling/header.css);
-@import url(../styling/nav.css);
 @import url(../styling/events.css);
 @import url(../styling/staff.css);
 @import url(../styling/card.css);
@@ -8,4 +7,3 @@
 @import url(../styling/step.css);
 @import url(../styling/about.css);
 @import url(../styling/footer.css);
-@import url(../styling/media.css);

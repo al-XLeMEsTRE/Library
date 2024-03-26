@@ -3,6 +3,7 @@
   margin: auto;
   padding: 40px;
   height: 100vh;
+  min-height: fit-content;
   text-align: center;
   background-color: #000000f0;
   box-shadow: -16px 20px 30px 10px #2e80ed;
@@ -52,20 +53,20 @@
 }
 
 .event-slideshow__title {
-  max-width: 450px;
-  font-size: 85px;
+  max-width: 400px;
+  font-size: 65px;
   font-weight: bold;
 }
 .event-slideshow__image {
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   border-radius: 50px;
   box-shadow: -11px 7px 40px 7px #dbd7af4f;
 }
 
 .event-slideshow__subtitle {
-  max-width: 600px;
-  font-size: 40px;
+  max-width: 380px;
+  font-size: 30px;
   color: #ffffff;
   line-height: 38px;
   text-align: justify;

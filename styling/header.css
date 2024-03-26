@@ -50,7 +50,7 @@
 .header__subtitle {
   z-index: 100;
   font-size: 40px;
-  padding-top: 80px;
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #3082ff;
   /* Define the bounce animation */
@@ -61,6 +61,7 @@
 .header__description {
   font-size: 30px;
   margin-bottom: 0px;
+  margin-top: 0;
   max-width: 600px;
   text-align: justify;
   background-color: #ff750425; /* Semi-transparent pink */
@@ -100,7 +101,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
+  padding-bottom: 40px;
 }
 .header__link {
   color: #2f80ed;
@@ -165,7 +166,7 @@
     align-items: center;
   }
   .header__description {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .header__description::after {
@@ -189,10 +190,10 @@
   }
 
   .header__subtitle {
-    font-size: 30px;
+    font-size: 28px;
   }
   .header__image {
-    max-width: 450px;
+    max-width: 300px;
   }
 
   .header__title {

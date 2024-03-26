@@ -74,110 +74,240 @@
       </header>
 
       <main class="content">
-        <section class="events">
-          <h2 class="events__heading">Upcoming Events:</h2>
-          <!-- Art & Technology -->
-          <div
-            class="event-slideshow__slide event-slideshow__slide--active"
-            id="slide1"
-          >
-            <p class="event-slideshow__info">
-              Date: [ ] <br />
-              Time: [ ]
-            </p>
-            <a href="[Register Link]" class="event-slideshow__link">Register</a>
-            <!-- Add your image here with an appropriate alt text -->
-            <div class="events-slideshow__media">
-              <h2 class="event-slideshow__title">
-                Art & Technology: <br />
-                <span class="event-slideshow__subtitle2">
-                  Exploring the Intersection</span
-                >
-              </h2>
-
+        <!-- Upcoming Events Section -->
+        <section class="events" id="events">
+          <h2 class="events__heading">Upcoming Events</h2>
+          <div class="events__grid">
+            <!-- Women in Astrophysics  -->
+            <div class="event-card">
+              <img
+                src="./images/Events/Astrophysis.webp"
+                alt="Art and Technology"
+                class="event-card__image"
+              />
+              <div class="event-card__content">
+                <h3 class="event-card__title">Women in Astrophysics</h3>
+                <p class="event-card__guest">Guest Artist: Jane Doe</p>
+                <p class="event-card__info">
+                  Date: [Insert Date] | Time: [Insert Time]
+                </p>
+                <p class="event-card__description">
+                  "Dive into the cosmos with 'Women in Astrophysics,' an event
+                  celebrating female scientists who have revolutionized our
+                  understanding of the stars. Hear from Dr. Ava Zhang, a leading
+                  astrophysicist, on the triumphs and trials of women in this
+                  expansive field. Join us for an inspiring journey through
+                  their stellar contributions to science."
+                </p>
+                <a href="[Register Link]" class="event-card__link">Register</a>
+              </div>
+            </div>
+            <!-- The Cosmic Connection -->
+            <div class="event-card" id="language-tree-event">
+              <img
+                src="./images/Events/The Cosmic Connection.png"
+                alt="The Language Tree"
+                class="event-card__image"
+              />
+              <div class="event-card__content">
+                <h3 class="event-card__title">
+                  The Cosmic COnnection: <br />
+                  An Interconnected Universe
+                </h3>
+                <p class="event-card__guest">al-X | Le MEsTRE</p>
+                <p class="event-card__info">
+                  Date: [Insert Date] | Time: [Insert Time]
+                </p>
+                <p class="event-card__description">
+                  Journey through the mystical convergence where science meets
+                  spirit. Explore the intricate relationships between the cosmic
+                  dance of celestial bodies, the molecular whispers of nature,
+                  and the silent introspection of spirituality.
+                </p>
+                <a href="[Register Link]" class="event-card__link">Register</a>
+              </div>
+            </div>
+            <!-- Art & Technology -->
+            <div class="event-card">
               <img
                 src="./images/Events/art&tech.png"
                 alt="Art and Technology"
-                class="event-slideshow__image"
+                class="event-card__image"
               />
-              <p class="event-slideshow__subtitle">
-                Melds the vibrant world of creativity with the precision of the
-                digital era. Attendees are invited to explore this intersection
-                of expressive brushstrokes and innovative bytes. Register now to
-                be part of a dialogue that redefines art in the digital age.
-              </p>
+              <div class="event-card__content">
+                <h3 class="event-card__title">
+                  Art & Technology; <br />
+                  Exploring the Intersection
+                </h3>
+                <p class="event-card__guest">Guest Artist: Jane Doe</p>
+                <p class="event-card__info">
+                  Date: [Insert Date] | Time: [Insert Time]
+                </p>
+                <p class="event-card__description">
+                  Melds the vibrant world of creativity with the precision of
+                  the digital era. Attendees are invited to explore this
+                  intersection of expressive brushstrokes and innovative bytes.
+                  Register now to be part of a dialogue that redefines art in
+                  the digital age.
+                </p>
+                <a href="[Register Link]" class="event-card__link">Register</a>
+              </div>
             </div>
-          </div>
-          <!-- Singularity & The New God -->
-          <div class="event-slideshow__slide" id="slide2">
-            <p class="event-slideshow__info">
-              Date: [ ] <br />
-              Time: [ ]
-            </p>
-            <a href="[Register Link]" class="event-slideshow__link">Register</a>
-            <div class="events-slideshow__media">
-              <h2 class="event-slideshow__title">
-                God and Singularity: <br />
-                <span class="event-slideshow__subtitle2"> Beyond Tomorrow</span>
-              </h2>
+            <!-- Singularity and The New God  -->
+            <div class="event-card">
               <img
                 src="./images/Events/Singlarity&the new GOd.png"
-                alt="Singularity and The New God"
-                class="event-slideshow__image"
+                alt="Art and Technology"
+                class="event-card__image"
               />
-              <p class="event-slideshow__subtitle">
-                "Singularity & The New God" invites you to envision a future
-                shaped by the hands of advanced AI and robotics. Step into a
-                realm where technology transcends human limitations and sparks
-                conversations about the next evolution of consciousness. Secure
-                your spot today for an event that promises a thought-provoking
-                journey into tomorrow.
-              </p>
+              <div class="event-card__content">
+                <h3 class="event-card__title">
+                  Singularity and The New God <br />
+                  Beyond Tomorrow
+                </h3>
+                <p class="event-card__guest">Guest Artist: al-X | LE MEsTRE</p>
+                <p class="event-card__info">
+                  Date: [Insert Date] | Time: [Insert Time]
+                </p>
+                <p class="event-card__description">
+                  Singularity & The New God" invites you to envision a future
+                  shaped by the hands of advanced AI and robotics. Step into a
+                  realm where technology transcends human limitations and sparks
+                  conversations about the next evolution of consciousness.
+                  Secure your spot today for an event that promises a
+                  thought-provoking journey into tomorrow
+                  <a href="[Register Link]" class="event-card__link"
+                    >Register</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- Poverty in our New World -->
-          <div class="event-slideshow__slide" id="slide3">
-            <p class="event-slideshow__info">
-              Date: [ ] <br />
-              Time: [ ]
-            </p>
-            <a href="[Register Link]" class="event-slideshow__link">Register</a>
-            <div class="events-slideshow__media">
-              <h2 class="event-slideshow__title">
-                Poverty in a New World: <br />
-                <span class="event-slideshow__subtitle2">
-                  Bridging the Divide</span
-                >
-              </h2>
+            <!-- Poverty in the New World  -->
+            <div class="event-card">
               <img
                 src="./images/Events/Poverty in the New World.png"
-                alt="Poverty in Our New World"
-                class="event-slideshow__image"
+                alt="Art and Technology"
+                class="event-card__image"
               />
-              <p class="event-slideshow__subtitle">
-                "Poverty in Our New World" explores the dichotomy of prosperity
-                and need within the tapestry of modern society. Join us to delve
-                into discussions and initiatives aimed at understanding and
-                addressing the global challenge of economic disparity. Be part
-                of the change—register now to contribute to a more equitable
-                world.
-              </p>
+              <div class="event-card__content">
+                <h3 class="event-card__title">Poverty in our New World</h3>
+                <p class="event-card__guest">Guest Artist: Jane Doe</p>
+                <p class="event-card__info">
+                  Date: [Insert Date] | Time: [Insert Time]
+                </p>
+                <p class="event-card__description">
+                  Poverty in Our New World" explores the dichotomy of prosperity
+                  and need within the tapestry of modern society. Join us to
+                  delve into discussions and initiatives aimed at understanding
+                  and addressing the global challenge of economic disparity. Be
+                  part of the change—register now to contribute to a more
+                  equitable world.
+                </p>
+                <a href="[Register Link]" class="event-card__link">Register</a>
+              </div>
+            </div>
+            <!-- The Language Tree  -->
+            <div class="event-card" id="language-tree-event">
+              <img
+                src="./images/Events/Language.webp"
+                alt="The Language Tree"
+                class="event-card__image"
+              />
+              <div class="event-card__content">
+                <h3 class="event-card__title">
+                  The Language Tree: <br />
+                  Our Global Connection
+                </h3>
+                <p class="event-card__guest">Guest Artist: Jane Doe</p>
+                <p class="event-card__info">
+                  Date: [Insert Date] | Time: [Insert Time]
+                </p>
+                <p class="event-card__description">
+                  Join us to explore the majestic tree of languages, each branch
+                  a different tongue, showing how deeply connected we are
+                  through the power of language.
+                </p>
+                <a href="[Register Link]" class="event-card__link">Register</a>
+              </div>
             </div>
           </div>
-          <!--Slideshow Navigation -->
-          <!--Slideshow Navigation -->
-          <button
-            class="event-slideshow__arrow event-slideshow__arrow--left"
-            onclick="plusSlides(-1)"
-          >
-            &#10094;
-          </button>
-          <button
-            class="event-slideshow__arrow event-slideshow__arrow--right"
-            onclick="plusSlides(1)"
-          >
-            &#10095;
-          </button>
+        </section>
+
+        <!-- Staff Picks Section -->
+        <!-- Staff Section -->
+        <section class="staff" id="staff-picks">
+          <h2 class="staff__title">Staff picks</h2>
+          <p class="staff__subtitle">That our readers love</p>
+
+          <ul class="staff__cards">
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Introduction to Algorithms</h3>
+                <p class="card__text">
+                  The name of this book is self-explanatory; it's a proper
+                  introduction to algorithms! Introduction to Algorithms, or
+                  CLRS, in reference to the authors' last names, goes in-depth
+                  and covers a range of algorithms across several self-contained
+                  chapters.
+                </p>
+                <p class="card__footer">
+                  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
+                  Clifford Stein
+                </p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  The Structure and Interpretation of Computer Programs (SICP)
+                </h3>
+                <p class="card__text">
+                  This is one of the best books for learning the fundamentals of
+                  programming. Featured by MIT in one of their foundational
+                  programming courses, SICP is a general-purpose programming
+                  book that uses Scheme to illustrate various programming
+                  concepts.
+                </p>
+                <p class="card__footer">
+                  Harold Abelson, Gerald Jay Sussman, Julie Sussman
+                </p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  The Clean Coder: A Code of Conduct for Professional
+                  Programmers
+                </h3>
+                <p class="card__text">
+                  Compiled by seasoned software engineer and author Robert C.
+                  Martin (also known as Uncle Bob), this book covers the
+                  techniques and tools of true software craftsmanship. It
+                  explains how to write clean code and demonstrates how to
+                  cultivate the attitude of a skilled, professional programmer.
+                </p>
+                <p class="card__footer">Steve McConnell</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  Code Complete: A Practical Handbook of Software Construction
+                </h3>
+                <p class="card__text">
+                  Want to know how to write robust code irrespective of the
+                  architecture behind your chosen programming language? Then
+                  consider reading Code Complete: A Practical Handbook of
+                  Software Construction. It comprehensively covers everything
+                  related to good code structure.
+                </p>
+                <p class="card__footer">Steve McConnell</p>
+              </div>
+            </li>
+          </ul>
         </section>
       </main>
     </div>

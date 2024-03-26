@@ -63,9 +63,23 @@
   margin-bottom: 0px;
   max-width: 600px;
   text-align: justify;
-  background-color: #ff750425;
-  padding: 10px;
-  border-radius: 20px;
+  background-color: #ff750425; /* Semi-transparent pink */
+  padding: 20px; /* Adjusted for visual balance */
+  border-radius: 20px; /* Rounded corners */
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+}
+
+.header__description::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Position just below the speech bubble */
+  left: 60px; /* Adjust this value to move the tail left/right */
+  width: 0;
+  height: 0;
+  border: 15px solid transparent; /* Creates the triangle */
+  border-top-color: #ff750425; /* Same color as the speech bubble background */
+  border-bottom: 0; /* Hide the bottom border */
+  margin-left: -15px; /* Center the triangle */
 }
 
 /* Header Container-Image */
@@ -146,9 +160,25 @@
   color: #000000;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1060px) {
+  .header__info {
+    align-items: center;
+  }
   .header__description {
     font-size: 25px;
+  }
+
+  .header__description::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; /* Position just below the speech bubble */
+    left: 200px; /* Adjust this value to move the tail left/right */
+    width: 0;
+    height: 0;
+    border: 15px solid transparent; /* Creates the triangle */
+    border-top-color: #ff750425; /* Same color as the speech bubble background */
+    border-bottom: 0; /* Hide the bottom border */
+    margin-left: -15px; /* Center the triangle */
   }
   .header__content {
     display: flex;
@@ -254,7 +284,7 @@
     margin-top: 30px;
   }
   .header__image {
-    max-width: 380px;
+    max-width: 300px;
   }
   .header__address {
     font-size: 1rem;

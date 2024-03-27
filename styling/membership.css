@@ -1,6 +1,9 @@
 .membership {
+  background-image: url(../images/membership/membership.png);
+  background-size: cover;
   padding: 80px 40px;
-  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 .membership__title {
@@ -20,4 +23,36 @@
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+}
+
+.step {
+  background-color: rgba(20, 26, 93, 0.424);
+  width: 220px;
+  margin: 0 40px 0 0;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.step:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.step__title {
+  color: rgb(255, 115, 0);
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.step__icon {
+  margin-left: 20px;
+  color: blue;
+}
+
+.step__description {
+  margin: 10px 0 0;
 }

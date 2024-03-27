@@ -174,6 +174,7 @@
 
 @media (max-width: 1060px) {
   .hamburger-menu {
+    color: #1f69c9;
     display: block; /* Show the hamburger menu */
     margin: 0;
     padding: 0;
@@ -181,6 +182,8 @@
     position: fixed;
     top: 60px;
     right: 50px;
+    color: #1f69c9;
+    z-index: 100;
   }
   .nav__list {
     display: none;
@@ -192,18 +195,27 @@
     align-items: flex-end; /* Center the links */
     /* Styles to properly format your navigation menu for mobile */
     position: fixed;
-    top: 135px;
+    top: 115px;
     right: 55px;
-
     margin-top: 0%; /* You might want to add more styles here */
+    z-index: 100;
+  }
+  .nav__link {
+    font-size: 20px;
+    color: #ff7504b3;
+  }
+
+  .nav__link--contact {
+    color: #2f80ed;
   }
 
   .header__info {
     align-items: center;
   }
   .header__description {
-    font-size: 25px;
-    margin-top: 40px;
+    font-size: 22px;
+    margin-top: 20px;
+    max-width: 400px;
   }
 
   .header__description::after {
@@ -280,14 +292,6 @@
     width: 100%; /* Full width */
     box-sizing: border-box; /* Ensure padding doesn't add to width */
     z-index: 100; /* Ensure list is below hamburger icon */
-  }
-  .nav__link {
-    font-size: 20px;
-    color: #ff7504b3;
-  }
-
-  .nav__link--contact {
-    color: #2f80ed;
   }
 
   .nav__logo {

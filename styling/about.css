@@ -40,7 +40,7 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  max-width: 660px;
+  max-width: 460px;
   z-index: 2;
 }
 
@@ -57,7 +57,7 @@
 
 .about__circle_animation_blurred {
   z-index: 0;
-  background-color: #555345;
+  background-color: rgba(255, 115, 0, 0.217);
   animation: pulsate 1.3s ease-in-out infinite; /* Apply the animation */
 }
 .about__paragraph {
@@ -65,4 +65,37 @@
 }
 .about__paragraph:last-child {
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .about__title {
+    margin-right: 0;
+    max-width: 300px;
+  }
+
+  .about__content {
+    text-align: justify;
+  }
+
+  .about__circle {
+    position: absolute;
+    left: 50%;
+    top: -380px;
+    transform: translateX(-50%);
+  }
+  .about__circle_animation_blurred {
+    z-index: 0;
+    background-color: rgba(255, 115, 0, 0.217);
+    animation: pulsate 1.3s ease-in-out infinite;
+    position: absolute;
+    left: 50%;
+    top: -380px;
+    transform: translateX(-50%);
+  }
 }

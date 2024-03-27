@@ -15,8 +15,9 @@
 }
 
 /* Navigation */
-.hamburger {
+.hamburger-menu {
   display: none;
+
   font-size: 30px;
   font-weight: bolder;
   background: none;
@@ -190,7 +191,7 @@
     flex-direction: column;
     align-items: flex-end; /* Center the links */
     /* Styles to properly format your navigation menu for mobile */
-    position: absolute;
+    position: fixed;
     top: 135px;
     right: 55px;
 

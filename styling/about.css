@@ -31,7 +31,7 @@
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
-  max-width: 184px;
+  max-width: 80px;
   margin-right: 60px;
   z-index: 2;
 }
@@ -47,7 +47,7 @@
 .about__circle {
   position: absolute;
   left: -222px;
-  top: -39px;
+  top: -9px;
   background-color: #2f80ed;
   width: 495px;
   height: 495px;

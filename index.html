@@ -13,61 +13,64 @@
     <div class="page">
       <!-- Header Section -->
       <header class="header">
-        <nav class="nav">
-          <img
-            src="./images/logo.svg"
-            alt="Triple Peaks Library Logo"
-            class="nav__logo"
-          />
+        <div class="header__container">
+          <!-- Navigation -->
+          <nav class="nav">
+            <img
+              src="./images/logo.svg"
+              alt="Triple Peaks Library Logo"
+              class="nav__logo"
+            />
 
-          <button class="hamburger-menu" aria-label="Open navigation menu">
-            &#9776;
-          </button>
-          <ul class="nav__list">
-            <li><a class="nav__link" href="#events">Events</a></li>
-            <li><a class="nav__link" href="#staff-picks">Staff picks</a></li>
-            <li>
-              <a class="nav__link" href="#become-a-member">Membership</a>
-            </li>
-            <li><a class="nav__link" href="#about">About</a></li>
-            <li>
-              <a class="nav__link nav__link--contact" href="#contacts"
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
+            <button class="hamburger-menu" aria-label="Open navigation menu">
+              &#9776;
+            </button>
+            <ul class="nav__list">
+              <li><a class="nav__link" href="#events">Events</a></li>
+              <li><a class="nav__link" href="#staff-picks">Staff picks</a></li>
+              <li>
+                <a class="nav__link" href="#become-a-member">Membership</a>
+              </li>
+              <li><a class="nav__link" href="#about">About</a></li>
+              <li>
+                <a class="nav__link nav__link--contact" href="#contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-        <!-- Header Content -->
+          <!-- Header Content -->
 
-        <div class="header__content">
-          <div class="header__info">
-            <h1 class="header__title">Welcome to the Triple Peaks</h1>
+          <div class="header__content">
+            <div class="header__info">
+              <h1 class="header__title">Welcome to the Triple Peaks</h1>
 
-            <p class="header__description">
-              We're pleased to open our library doors to everyone! <br />
-              Come and expand your development knowledge, or just use this
-              lovely spot to work or study. <br />This is a cool place for cool
-              students!
+              <p class="header__description">
+                We're pleased to open our library doors to everyone! <br />
+                Come and expand your development knowledge, or just use this
+                lovely spot to work or study. <br />This is a cool place for
+                cool students!
+              </p>
+            </div>
+
+            <div class="header__image-container">
+              <div><h2 class="header__subtitle">Library</h2></div>
+              <!-- Illustration 'Inside the library'    -->
+              <img
+                src="./images/inside_the_library.png"
+                alt="Illustration 'Inside the library'"
+                class="header__image"
+              />
+            </div>
+          </div>
+
+          <div class="header__footer">
+            <a class="header__link" href="#about">About the library ↓</a>
+            <p class="header__address">
+              200 Success Avenue, The Town of Triple Peaks
             </p>
           </div>
-
-          <div class="header__image-container">
-            <div><h2 class="header__subtitle">Library</h2></div>
-            <!-- Illustration 'Inside the library'    -->
-            <img
-              src="./images/inside_the_library.png"
-              alt="Illustration 'Inside the library'"
-              class="header__image"
-            />
-          </div>
-        </div>
-
-        <div class="header__footer">
-          <a class="header__link" href="#about">About the library ↓</a>
-          <p class="header__address">
-            200 Success Avenue, The Town of Triple Peaks
-          </p>
         </div>
       </header>
 
@@ -168,16 +171,13 @@
                   Date: [Insert Date] | Time: [Insert Time]
                 </p>
                 <p class="event-card__description">
-                  Singularity & The New God" invites you to envision a future
-                  shaped by the hands of advanced AI and robotics. Step into a
-                  realm where technology transcends human limitations and sparks
-                  conversations about the next evolution of consciousness.
-                  Secure your spot today for an event that promises a
-                  thought-provoking journey into tomorrow
-                  <a href="[Register Link]" class="event-card__link"
-                    >Register</a
-                  >
+                  "Explore a future sculpted by AI and robotics at 'Singularity
+                  & The New God.' Delve into discussions on technology
+                  surpassing human limits and the upcoming evolution of
+                  consciousness. Join this event for a riveting glimpse into
+                  what lies ahead."
                 </p>
+                <a href="[Register Link]" class="event-card__link">Register</a>
               </div>
             </div>
             <!-- Poverty in the New World  -->
@@ -390,6 +390,82 @@
           <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
+
+      <!-- Footer Section -->
+      <footer class="footer" id="contacts">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              class="footer__logo"
+              src="./images/logo_white.svg"
+              alt="footer logo"
+            />
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <h3 class="footer__column-heading">Hours</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+              <li class="footer__list-item">Weekends: 10am - 6pm</li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column_content_social">
+            <h3 class="footer__column-heading">Social media</h3>
+
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="Facebook"
+                  />
+                  Facebook</a
+                >
+              </li>
+
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="Instagram"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          <img
+            class="footer__image"
+            src="./images/copyright/Logo.png"
+            alt="Illustration of a person reading a book"
+          />
+          <p class="footer__text">
+            © 2024
+            <a
+              href="https://github.com/al-XLeMEsTRE?tab=repositories"
+              class="footer__link"
+              target="_blank"
+            >
+              Gregory Alexandre |
+            </a>
+
+            <a
+              href="https://github.com/al-XLeMEsTRE/Library"
+              class="footer__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Triple Peaks Library
+            </a>
+            All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
 
     <script src="./script.js"></script>

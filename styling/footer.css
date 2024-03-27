@@ -1,5 +1,6 @@
 .footer {
   box-sizing: border-box;
+  border-top: 1px solid #ec8a094f;
   background-color: #1f1f1f;
   padding: 20px;
 }
@@ -72,10 +73,10 @@
 
 .footer__copyright {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin-top: 108px;
-  gap: 20px;
+  gap: 40px;
 
   margin-bottom: 0;
   color: white;
@@ -86,7 +87,8 @@
   height: 80px;
 }
 .footer__text {
-  font-size: 22px;
+  align-items: flex-end;
+  font-size: 2opx;
   color: #fff;
 }
 
@@ -104,7 +106,7 @@
   height: 2px;
   bottom: -3px;
   left: 0;
-  background-color: #ffffff;
+  background-color: #ec8a09;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }

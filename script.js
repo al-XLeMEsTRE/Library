@@ -1,30 +1,12 @@
-// script.js
-document.addEventListener("DOMContentLoaded", (event) => {
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const navLinks = document.querySelector(".nav__links");
+// Get the hamburger menu button and navigation list
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const navList = document.querySelector(".nav__list");
 
-  hamburgerMenu.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
-  });
-  let currentSlideIndex = 1;
-  showSlides(currentSlideIndex);
+// Add a click event listener to the hamburger menu button
+hamburgerMenu.addEventListener("click", function () {
+  // Log to the console when the hamburger menu is clicked
+  console.log("Hamburger menu clicked!");
 
-  window.plusSlides = function (n) {
-    showSlides((currentSlideIndex += n));
-  };
-
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("event-slideshow__slide");
-    if (n > slides.length) {
-      currentSlideIndex = 1;
-    }
-    if (n < 1) {
-      currentSlideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slides[currentSlideIndex - 1].style.display = "block";
-  }
+  // Toggle the 'active' class on the navigation list
+  navList.classList.toggle("active");
 });

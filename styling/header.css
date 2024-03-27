@@ -282,7 +282,13 @@
   }
   .nav__link {
     font-size: 20px;
+    color: #ff7504b3;
   }
+
+  .nav__link--contact {
+    color: #2f80ed;
+  }
+
   .nav__logo {
     width: 40px;
     margin: 40px auto 10px; /* Center logo */
@@ -298,7 +304,7 @@
   }
 
   .header__image {
-    max-width: 250px;
+    max-width: 230px;
   }
 
   .header__footer {
